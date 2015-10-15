@@ -1,0 +1,39 @@
+<!--<div>-->
+<!--<ul>-->
+<!--<li ng-repeat="user in users">{{name}}</li>-->
+<!--</ul>-->
+<!--</div>-->
+<div class="row clearfix">
+    <div class="col-md-12 column">
+        <table class="table table-bordered table-hover" id="tab_logic">
+            <thead>
+            <tr>
+                <th class="text-center">
+                    #
+                </th>
+                <th class="text-center">
+                    Name
+                </th>
+                <th class="text-center">
+                    Alias
+                </th>
+
+            </tr>
+            </thead>
+            <tbody>
+
+
+
+            <tr id="addr3" ng-repeat ="country in countries" >
+                <td>{{country._id}}</td>
+                <td>{{country.name}}</td>
+                <td>{{country.alias}}</td>
+
+
+            </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+<!--<div>-->
+<!--<ul>-->
+<!--<li ng-repeat="user in users">{{name}}</li>-->
+<!--</ul>-->
+<!--</div>-->
+<div class="row clearfix">
+    <div class="col-md-12 column">
+        <table class="table table-bordered table-hover" id="tab_logic">
+            <thead>
+            <tr>
+                <th class="text-center">
+                    #
+                </th>
+                <th class="text-center">
+                    Name
+                </th>
+                <th class="text-center">
+                    Mail
+                </th>
+                <th class="text-center">
+                    Mobile
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr id="addr0">
+
+                <td>
+                    <input type="text" name="name0" placeholder="Id" class="form-control" disabled>
+                </td>
+                <td>
+                    <input type="text" name="mail0" placeholder="Name" class="form-control" ng-model="country.name">
+                </td>
+                <td>
+                    <input type="text" name="mobile0" placeholder="Alias" class="form-control" ng-model="country.alias">
+                </td>
+                <td>
+                    <button class="btn btn-success" ng-click="addCountry(country)">add</button>
+                </td>
+            </tr>
+
+
+            <tr id="addr3" ng-repeat ="country in countries" >
+                <td>{{country._id}}</td>
+                <td>{{country.name}}</td>
+                <td>{{country.alias}}</td>
+                <td>
+                    <button class="btn btn-danger" ng-click="removeCountry(country)">Remove</button>
+                    <button class="btn btn-primary" ng-click="editAssign(country)">Edit</button>
+                </td>
+
+            </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
